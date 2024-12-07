@@ -9,12 +9,13 @@ import { platforms } from "../constants";
 
 const PlatformGoto = ({ title, icon, link }) => (
   <div className='flex flex-row justify-center items-center white-bg rounded-md p-3 cursor-pointer'>
-    <a href={link} target="_blank" rel="noopener noreferrer">
+    <a href={link} target="_blank" rel="noopener noreferrer" className="flex justify-center items-center gap-2">
       <img
         src={icon}
         alt='source_code'
         className='w-10 h-10 object-contain'
       />
+      <span>{title}</span>
     </a>
   </div>
 );
@@ -30,20 +31,16 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <div className='mt-20 flex flex-wrap gap-10'>
-          {platforms.map((platform, index) => (
-            <PlatformGoto {...platform} />
-          ))}
-        </div>
-
-
+        {platforms.map((platform, index) => (
+          <PlatformGoto {...platform} />
+        ))}
       </motion.div>
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+        <EarthCanvas/>
       </motion.div>
     </div>
   );

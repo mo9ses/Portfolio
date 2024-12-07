@@ -15,7 +15,11 @@ import {
   network,
   cios,
   rot,
-  linkedin
+  linkedin,
+  mail,
+  discord,
+  githubsquare,
+  instagram,
 } from "../assets";
 
 export const navLinks = [
@@ -130,7 +134,27 @@ const platforms = [
     title: "LinkedIn",
     icon: linkedin,
     link: "https://www.linkedin.com/in/bryan-athanas-6a8bb4314/",
-  }
+  },
+  {
+    title: "GitHub",
+    icon: githubsquare,
+    link: "https://github.com/mo9ses/",
+  },
+  {
+    title: "Discord",
+    icon: discord,
+    link: "https://discord.com/users/1129484163876147280",
+  },
+  {
+    title: "Mail",
+    icon: mail,
+    link: "mailto:mercydelmas17@gmail.com",
+  },
+  {
+    title: "Instagram",
+    icon: instagram,
+    link: "https://www.instagram.com/2fly4mo/",
+  },
 ];
 
 export { services, technologies, projects, platforms };

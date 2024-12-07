@@ -26,6 +26,10 @@ import typescript from "./tech/typescript.png";
 
 //platforms
 import linkedin from "./platform/linkedin.png";
+import mail from "./platform/mail.png";
+import discord from "./platform/discord.png";
+import githubsquare from "./platform/github-square.png";
+import instagram from "./platform/instagram.png";
 
 //Misc
 import menu from "./menu.svg";
@@ -33,6 +37,10 @@ import close from "./close.svg";
 
 
 export {
+  mail,
+  discord,
+  githubsquare,
+  instagram,
   aws,
   rot,
   python,
