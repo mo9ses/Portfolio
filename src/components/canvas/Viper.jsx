@@ -43,7 +43,7 @@ const material2 = new MeshStandardMaterial({
 });
 
 const Car = () => {
-  const car = useGLTF("./public/car/scene.glb");
+  const car = useGLTF("./car/scene.glb");
   const [isLandscape, setIsLandscape] = useState(false);
 
   useEffect(() => {
