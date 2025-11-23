@@ -7,6 +7,7 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 
+//Make it so the cards don't snap back into place when you move the mouse off of them
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
@@ -30,7 +31,7 @@ const ServiceCard = ({ index, title, icon }) => (
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
-      </div>
+      </div>.
     </motion.div>
   </Tilt>
 );

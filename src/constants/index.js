@@ -154,7 +154,7 @@ const platforms = [
     title: "Instagram",
     icon: instagram,
     link: "https://www.instagram.com/2fly4mo/",
-  },
+  }
 ];
 
 export { services, technologies, projects, platforms };

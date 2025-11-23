@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ViperCanvas } from "./canvas";
+import { CarCanvas } from "./canvas";
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
 
-      <ViperCanvas />
+      <CarCanvas />
 
       <div id="downthing" className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
